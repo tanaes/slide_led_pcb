@@ -10114,7 +10114,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:CONN-TH_P5.00_KF243-5.0-2P"
+		(property "Footprint" "easyeda2kicad:CONN-TH_4P-P5.00_1862411"
 			(at 179.07 40.64 0)
 			(effects
 				(font
