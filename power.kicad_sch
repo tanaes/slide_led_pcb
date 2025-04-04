@@ -10665,7 +10665,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0e454b2-8fa9-46d4-8c7b-080b47b09d11")
-		(property "Reference" "JP1"
+		(property "Reference" "SW4"
 			(at 262.89 26.67 0)
 			(effects
 				(font
@@ -10673,7 +10673,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
+		(property "Value" "SW_SPDT"
 			(at 262.89 29.21 0)
 			(effects
 				(font
@@ -10681,7 +10681,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Straight_CK_OS102011MS2Q"
+		(property "Footprint" "easyeda2kicad:SW-TH_SS-12D02-VG4"
 			(at 262.89 35.56 0)
 			(effects
 				(font
@@ -10833,6 +10833,14 @@
 				)
 			)
 		)
+		(property "LCSC" "C136719"
+			(at 262.89 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cccc6526-b2ca-419c-ae7b-73dfee025a4a")
 		)
@@ -10845,7 +10853,7 @@
 		(instances
 			(project "Slide LED connector v0.2"
 				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/323c879c-5988-4222-aa85-b1dbd118002c"
-					(reference "JP1")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
