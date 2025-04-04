@@ -2865,7 +2865,7 @@
 				)
 			)
 		)
-		(property "Value" "680R"
+		(property "Value" "1k"
 			(at 149.9432 46.99 90)
 			(effects
 				(font
@@ -2900,7 +2900,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23228"
+		(property "LCSC" "C21190"
 			(at 152.4 46.99 0)
 			(effects
 				(font
@@ -4809,7 +4809,7 @@
 				)
 			)
 		)
-		(property "Value" "680R"
+		(property "Value" "1k"
 			(at 149.9432 81.28 90)
 			(effects
 				(font
@@ -4844,7 +4844,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23228"
+		(property "LCSC" "C21190"
 			(at 152.4 81.28 0)
 			(effects
 				(font

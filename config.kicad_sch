@@ -2775,6 +2775,27 @@
 		)
 		(uuid "ebe9a297-0050-4dcb-b36b-053fc5bd5aa0")
 	)
+	(text_box "LED Calculations:\nTargeting 5 mcd for indicators.\n                                             3.3V  5V   24V\nC2286:    R 110 mcd @ 20mA; 1.0 mA; FV 2.0;  1.3k  3k   22k\nC2297:    G 225 mcd @ 20mA; 0.5 mA; FV 2.8;  1k    4.4k 42k \nC34499:   W 350 mcd @ 5mA;  0.1 mA; FV 2.8;  5k    22k  212k \nC3029072: R 350 mcd @ 20mA; 0.3 mA; FV 2.2;  3666\n          G 240 mcd @ 5mA;  0.1 mA; FV 2.8;  5k\n          B 75  mcd @ 5mA;  0.3 mA; FV 2.8;  1666"
+		(exclude_from_sim no)
+		(at 140.97 143.51 0)
+		(size 55.88 20.32)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Menlo")
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "2cb6fc78-2dae-4eb8-b209-8eb330521d51")
+	)
 	(text_box "I don't want all the indicator LEDs blaring away 24/7, so I'm adding a switch to let me turn them on or off while troubleshooting. I may or may not connect the mosfet controlled leg to GPIO."
 		(exclude_from_sim no)
 		(at 123.825 48.895 0)
@@ -3191,7 +3212,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 40.64) (xy 58.42 44.45)
+			(xy 30.48 40.64) (xy 30.48 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3331,7 +3352,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 40.64) (xy 92.71 44.45)
+			(xy 101.6 40.64) (xy 101.6 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3341,7 +3362,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 29.21) (xy 92.71 33.02)
+			(xy 101.6 29.21) (xy 101.6 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3371,7 +3392,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 53.34) (xy 58.42 49.53)
+			(xy 30.48 53.34) (xy 30.48 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3401,7 +3422,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 40.64) (xy 74.93 44.45)
+			(xy 83.82 40.64) (xy 83.82 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3571,7 +3592,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 53.34) (xy 92.71 49.53)
+			(xy 101.6 53.34) (xy 101.6 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3641,7 +3662,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 53.34) (xy 74.93 49.53)
+			(xy 83.82 53.34) (xy 83.82 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3811,7 +3832,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 40.64) (xy 109.22 44.45)
+			(xy 55.88 40.64) (xy 55.88 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3971,7 +3992,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 29.21) (xy 58.42 33.02)
+			(xy 30.48 29.21) (xy 30.48 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4041,7 +4062,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 29.21) (xy 74.93 33.02)
+			(xy 83.82 29.21) (xy 83.82 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4091,7 +4112,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 53.34) (xy 109.22 49.53)
+			(xy 55.88 53.34) (xy 55.88 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4381,7 +4402,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 29.21) (xy 109.22 33.02)
+			(xy 55.88 29.21) (xy 55.88 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4598,7 +4619,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 109.22 53.34 0)
+		(at 55.88 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4607,7 +4628,7 @@
 		(fields_autoplaced yes)
 		(uuid "00723296-4d7d-43c5-8f2d-eb8948ab4d4e")
 		(property "Reference" "#PWR0171"
-			(at 109.22 59.69 0)
+			(at 55.88 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4616,7 +4637,7 @@
 			)
 		)
 		(property "Value" "GND_IND"
-			(at 109.22 58.42 0)
+			(at 55.88 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,7 +4645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 53.34 0)
+			(at 55.88 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,7 +4654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 53.34 0)
+			(at 55.88 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4642,7 +4663,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 109.22 53.34 0)
+			(at 55.88 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,7 +4685,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 74.93 29.21 0)
+		(at 83.82 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4673,7 +4694,7 @@
 		(fields_autoplaced yes)
 		(uuid "0267f254-ff97-42f0-a64c-16c4fe2f6c1a")
 		(property "Reference" "#PWR012"
-			(at 74.93 33.02 0)
+			(at 83.82 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4682,7 +4703,7 @@
 			)
 		)
 		(property "Value" "+5V_FUSED"
-			(at 74.93 25.0769 0)
+			(at 83.82 25.0769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4690,7 +4711,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 29.21 0)
+			(at 83.82 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4699,7 +4720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 29.21 0)
+			(at 83.82 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4708,7 +4729,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 74.93 29.21 0)
+			(at 83.82 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4717,7 +4738,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 74.93 29.21 0)
+			(at 83.82 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,6 +4753,217 @@
 			(project "Slide LED connector v0.2"
 				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 229.87 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02b68b56-431e-45d6-a45c-5f902010de2c")
+		(property "Reference" "D39"
+			(at 234.442 34.798 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_5V_FUSED_IN"
+			(at 234.442 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2297"
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "color" "green"
+			(at 231.14 31.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" ""
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70de0581-d421-4c4d-8c63-61a4964db388")
+		)
+		(pin "2"
+			(uuid "d68a0c76-ba0b-4cc6-a250-8d033906e85f")
+		)
+		(instances
+			(project "Slide LED connector v0.2"
+				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
+					(reference "D39")
 					(unit 1)
 				)
 			)
@@ -4798,217 +5030,6 @@
 			(project "Slide LED connector v0.2"
 				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
 					(reference "#PWR086")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 212.09 35.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "043ae873-c640-4da7-b61f-587b51def928")
-		(property "Reference" "D38"
-			(at 214.884 37.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED_5V_FUSED"
-			(at 214.884 39.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C34499"
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "color" "white"
-			(at 213.106 30.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" ""
-			(at 212.09 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "177f23d3-337f-4749-b796-306cd00948d5")
-		)
-		(pin "2"
-			(uuid "9fec0c6e-fc37-49c6-b6a4-77cdbb614225")
-		)
-		(instances
-			(project "Slide LED connector v0.2"
-				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
-					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -6092,15 +6113,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 109.22 36.83 90)
+		(at 101.6 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "24af1df4-394f-434e-bb45-36f8d2951994")
-		(property "Reference" "D15"
-			(at 113.03 37.1474 90)
+		(uuid "24a5d750-9aee-459e-bdf5-d9f525adb402")
+		(property "Reference" "D14"
+			(at 105.41 37.1474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6108,8 +6129,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED_5V_EXT"
-			(at 113.03 39.6874 90)
+		(property "Value" "LED_24V_FUSED"
+			(at 105.41 39.6874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6118,7 +6139,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6127,7 +6148,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6136,7 +6157,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6144,8 +6165,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2297"
-			(at 109.22 36.83 0)
+		(property "LCSC" "C34499"
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6153,8 +6174,8 @@
 				(hide yes)
 			)
 		)
-		(property "color" "green"
-			(at 110.49 32.512 0)
+		(property "color" "white"
+			(at 102.616 32.258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6162,7 +6183,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6171,7 +6192,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6180,7 +6201,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6189,7 +6210,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6198,7 +6219,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6207,7 +6228,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6216,7 +6237,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6225,7 +6246,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6234,7 +6255,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6243,7 +6264,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6252,7 +6273,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6261,7 +6282,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6270,7 +6291,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6279,7 +6300,218 @@
 			)
 		)
 		(property "Rating" ""
-			(at 109.22 36.83 0)
+			(at 101.6 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5fd8c0e9-313f-4533-9ea5-d097caf37145")
+		)
+		(pin "2"
+			(uuid "c021d5c5-3b55-4a47-a4f9-8afa6dcf820b")
+		)
+		(instances
+			(project "Slide LED connector v0.2"
+				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 55.88 36.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24af1df4-394f-434e-bb45-36f8d2951994")
+		(property "Reference" "D15"
+			(at 59.69 37.1474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_5V_EXT"
+			(at 59.69 39.6874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2297"
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "color" "green"
+			(at 57.15 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 55.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" ""
+			(at 55.88 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6303,7 +6535,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 58.42 36.83 90)
+		(at 30.48 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6311,7 +6543,7 @@
 		(dnp no)
 		(uuid "27bcd5ea-10ef-4d65-a816-a1e0ab33046d")
 		(property "Reference" "D23"
-			(at 61.341 37.2053 90)
+			(at 33.401 37.2053 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6320,7 +6552,7 @@
 			)
 		)
 		(property "Value" "LED_3V3"
-			(at 61.341 39.6296 90)
+			(at 33.401 39.6296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6329,7 +6561,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6338,7 +6570,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6347,7 +6579,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6356,7 +6588,7 @@
 			)
 		)
 		(property "LCSC" "C2297"
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +6597,7 @@
 			)
 		)
 		(property "color" "green"
-			(at 59.436 32.512 0)
+			(at 31.496 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6373,7 +6605,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6382,7 +6614,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6391,7 +6623,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6400,7 +6632,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6409,7 +6641,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6418,7 +6650,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6427,7 +6659,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6436,7 +6668,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6445,7 +6677,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6454,7 +6686,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6463,7 +6695,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6472,7 +6704,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6481,7 +6713,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6490,7 +6722,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 58.42 36.83 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6580,7 +6812,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 109.22 46.99 0)
+		(at 55.88 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6589,7 +6821,7 @@
 		(fields_autoplaced yes)
 		(uuid "305b9b8c-1b7d-44c1-9846-3a4eaeefe72e")
 		(property "Reference" "R26"
-			(at 110.7186 45.7778 0)
+			(at 58.42 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6597,8 +6829,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 110.7186 48.2021 0)
+		(property "Value" "4.7k"
+			(at 58.42 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6607,7 +6839,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6616,7 +6848,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6625,7 +6857,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6633,8 +6865,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
-			(at 109.22 46.99 0)
+		(property "LCSC" "C23162"
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6643,7 +6875,7 @@
 			)
 		)
 		(property "color" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6652,7 +6884,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6661,7 +6893,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6670,7 +6902,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6679,7 +6911,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6688,7 +6920,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,7 +6929,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6706,7 +6938,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6715,7 +6947,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6724,7 +6956,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6733,7 +6965,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6742,7 +6974,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6751,7 +6983,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6760,7 +6992,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6769,7 +7001,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 109.22 46.99 0)
+			(at 55.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7217,7 +7449,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 92.71 53.34 0)
+		(at 101.6 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7226,7 +7458,7 @@
 		(fields_autoplaced yes)
 		(uuid "34b2388d-7b98-43f9-ba3f-142204f991a8")
 		(property "Reference" "#PWR0170"
-			(at 92.71 59.69 0)
+			(at 101.6 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7235,7 +7467,7 @@
 			)
 		)
 		(property "Value" "GND_IND"
-			(at 92.71 58.42 0)
+			(at 101.6 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7243,7 +7475,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 53.34 0)
+			(at 101.6 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7252,7 +7484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 53.34 0)
+			(at 101.6 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7261,7 +7493,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 92.71 53.34 0)
+			(at 101.6 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7777,7 +8009,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 74.93 46.99 0)
+		(at 83.82 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7786,7 +8018,7 @@
 		(fields_autoplaced yes)
 		(uuid "502fba90-8546-402f-8a3d-305f62557952")
 		(property "Reference" "R18"
-			(at 76.4286 45.7778 0)
+			(at 86.36 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7794,8 +8026,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 76.4286 48.2021 0)
+		(property "Value" "10k"
+			(at 86.36 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7804,7 +8036,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7813,7 +8045,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7822,7 +8054,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7830,8 +8062,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
-			(at 74.93 46.99 0)
+		(property "LCSC" "C25804"
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7840,7 +8072,7 @@
 			)
 		)
 		(property "color" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7849,7 +8081,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7858,7 +8090,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7867,7 +8099,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7876,7 +8108,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7885,7 +8117,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7894,7 +8126,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7903,7 +8135,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7912,7 +8144,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7921,7 +8153,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7930,7 +8162,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7939,7 +8171,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7948,7 +8180,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7957,7 +8189,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7966,7 +8198,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 74.93 46.99 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8065,7 +8297,7 @@
 		(fields_autoplaced yes)
 		(uuid "520eeee6-3767-4d43-8a26-921a0fb3df67")
 		(property "Reference" "R91"
-			(at 231.3686 44.5078 0)
+			(at 232.41 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8073,8 +8305,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 231.3686 46.9321 0)
+		(property "Value" "4.7k"
+			(at 232.41 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8109,7 +8341,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C23162"
 			(at 229.87 45.72 0)
 			(effects
 				(font
@@ -8572,7 +8804,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED_5V_EXT"
+		(property "Value" "LED_5V_USB"
 			(at 200.152 37.338 90)
 			(effects
 				(font
@@ -8767,7 +8999,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 58.42 46.99 0)
+		(at 30.48 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8776,7 +9008,7 @@
 		(fields_autoplaced yes)
 		(uuid "5cb05bcf-8f97-4dab-a5b8-1c9bc8d0c6bb")
 		(property "Reference" "R77"
-			(at 59.9186 45.7778 0)
+			(at 31.9786 45.7778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8785,7 +9017,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 59.9186 48.2021 0)
+			(at 31.9786 48.2021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8794,7 +9026,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,7 +9035,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8812,7 +9044,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8821,7 +9053,7 @@
 			)
 		)
 		(property "LCSC" "C21190"
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8830,7 +9062,7 @@
 			)
 		)
 		(property "color" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8839,7 +9071,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8848,7 +9080,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8857,7 +9089,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8866,7 +9098,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8875,7 +9107,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8884,7 +9116,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8893,7 +9125,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8902,7 +9134,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8911,7 +9143,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8920,7 +9152,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8929,7 +9161,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8938,7 +9170,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8947,7 +9179,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8956,7 +9188,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 58.42 46.99 0)
+			(at 30.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8986,10 +9218,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5d884739-fd28-42d0-a04b-0b0c8ceb9a07")
 		(property "Reference" "R69"
-			(at 62.23 88.9 90)
+			(at 58.674 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9630,219 +9861,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 92.71 36.83 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6886692a-1ad9-46aa-ab04-3ffd231a2763")
-		(property "Reference" "D14"
-			(at 96.52 37.1474 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED_24V"
-			(at 96.52 39.6874 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2297"
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "color" "green"
-			(at 93.472 32.258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" ""
-			(at 92.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3d88fabc-8787-4e8c-b751-cda580c71a52")
-		)
-		(pin "2"
-			(uuid "11f119e3-1339-4d1a-8ed7-56ac261159b1")
-		)
-		(instances
-			(project "Slide LED connector v0.2"
-				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
-					(reference "D14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
-		(at 92.71 46.99 0)
+		(at 101.6 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9851,7 +9871,7 @@
 		(fields_autoplaced yes)
 		(uuid "6ca4ce1d-cc3f-4977-b63b-3a8baa1cf5a3")
 		(property "Reference" "R19"
-			(at 94.2086 45.7778 0)
+			(at 104.14 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9859,8 +9879,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 94.2086 48.2021 0)
+		(property "Value" "47k"
+			(at 104.14 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9869,7 +9889,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9878,7 +9898,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9887,7 +9907,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9895,8 +9915,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
-			(at 92.71 46.99 0)
+		(property "LCSC" "C25819"
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9905,7 +9925,7 @@
 			)
 		)
 		(property "color" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9914,7 +9934,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9923,7 +9943,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9932,7 +9952,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9941,7 +9961,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9950,7 +9970,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9959,7 +9979,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9968,7 +9988,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9977,7 +9997,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9986,7 +10006,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9995,7 +10015,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10004,7 +10024,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10013,7 +10033,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10022,7 +10042,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10031,7 +10051,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 92.71 46.99 0)
+			(at 101.6 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10405,10 +10425,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7beb8581-d16c-485f-aa4e-3af2e271d9f0")
 		(property "Reference" "R67"
-			(at 62.23 83.82 90)
+			(at 58.674 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10996,10 +11015,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8830a437-5248-4fb6-9e16-78d32db50043")
 		(property "Reference" "R68"
-			(at 62.23 93.98 90)
+			(at 58.928 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11194,6 +11212,217 @@
 			(project "Slide LED connector v0.2"
 				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
 					(reference "R68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 212.09 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "88902b85-4cad-4f4c-b3ec-538f7ffd6bbe")
+		(property "Reference" "D38"
+			(at 216.662 34.798 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_5V_CONN"
+			(at 216.662 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2297"
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "color" "green"
+			(at 213.36 31.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" ""
+			(at 212.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47d0aa0b-a6c5-42de-97ef-564dba42e842")
+		)
+		(pin "2"
+			(uuid "fc52e274-2811-4a0b-8e57-333bc8a34b77")
+		)
+		(instances
+			(project "Slide LED connector v0.2"
+				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
+					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -11640,7 +11869,7 @@
 		(fields_autoplaced yes)
 		(uuid "8fdb4817-f4dc-410c-8354-da41de492e14")
 		(property "Reference" "R87"
-			(at 183.1086 44.5078 0)
+			(at 184.15 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11648,8 +11877,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 183.1086 46.9321 0)
+		(property "Value" "4.7k"
+			(at 184.15 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11684,7 +11913,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C23162"
 			(at 181.61 45.72 0)
 			(effects
 				(font
@@ -11844,7 +12073,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 109.22 29.21 0)
+		(at 55.88 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11852,7 +12081,7 @@
 		(dnp no)
 		(uuid "90aea5f6-253b-4c2b-a498-e19ff73fde8a")
 		(property "Reference" "#PWR0146"
-			(at 109.22 33.02 0)
+			(at 55.88 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11861,7 +12090,7 @@
 			)
 		)
 		(property "Value" "+5V_IN"
-			(at 109.22 25.146 0)
+			(at 55.88 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11869,7 +12098,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 29.21 0)
+			(at 55.88 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11878,7 +12107,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 29.21 0)
+			(at 55.88 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11887,7 +12116,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 109.22 29.21 0)
+			(at 55.88 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11896,7 +12125,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 109.22 29.21 0)
+			(at 55.88 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11918,7 +12147,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 58.42 29.21 0)
+		(at 30.48 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11927,7 +12156,7 @@
 		(fields_autoplaced yes)
 		(uuid "949d7ff4-8938-463f-91d0-12ca48bb9460")
 		(property "Reference" "#PWR054"
-			(at 58.42 33.02 0)
+			(at 30.48 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11936,7 +12165,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 58.42 25.0769 0)
+			(at 30.48 25.0769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11944,7 +12173,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 29.21 0)
+			(at 30.48 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11953,7 +12182,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 29.21 0)
+			(at 30.48 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11962,7 +12191,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 58.42 29.21 0)
+			(at 30.48 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11984,7 +12213,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 74.93 53.34 0)
+		(at 83.82 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11993,7 +12222,7 @@
 		(fields_autoplaced yes)
 		(uuid "94f023f0-da54-4f9f-a010-c9bee4600c1d")
 		(property "Reference" "#PWR0169"
-			(at 74.93 59.69 0)
+			(at 83.82 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12002,7 +12231,7 @@
 			)
 		)
 		(property "Value" "GND_IND"
-			(at 74.93 58.42 0)
+			(at 83.82 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12010,7 +12239,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 53.34 0)
+			(at 83.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12019,7 +12248,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 53.34 0)
+			(at 83.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12028,7 +12257,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 74.93 53.34 0)
+			(at 83.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12050,7 +12279,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 92.71 29.21 0)
+		(at 101.6 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12059,7 +12288,7 @@
 		(fields_autoplaced yes)
 		(uuid "98b90b6c-dd47-4c3d-8e5d-8afac8e8a216")
 		(property "Reference" "#PWR022"
-			(at 92.71 33.02 0)
+			(at 101.6 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12068,7 +12297,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 92.71 25.0769 0)
+			(at 101.6 25.0769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12076,7 +12305,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 29.21 0)
+			(at 101.6 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12085,7 +12314,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 29.21 0)
+			(at 101.6 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12094,7 +12323,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 92.71 29.21 0)
+			(at 101.6 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12571,7 +12800,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED_5V_EXT"
+		(property "Value" "LED_5V_PoE"
 			(at 185.42 38.4174 90)
 			(effects
 				(font
@@ -13327,217 +13556,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 229.87 35.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b740d7e3-e1d8-489d-b0ff-55b58360ee4f")
-		(property "Reference" "D39"
-			(at 233.68 35.8774 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED_5V_FUSED"
-			(at 233.68 38.4174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C34499"
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "color" "white"
-			(at 230.886 30.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" ""
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "629b58f1-9cef-453c-a189-01b8d95a0c02")
-		)
-		(pin "2"
-			(uuid "b1ce568e-3ff3-4548-9c5d-6c7327df653d")
-		)
-		(instances
-			(project "Slide LED connector v0.2"
-				(path "/bf4b09fd-2d42-43b2-9834-c05987d36a77/afb271c6-0c71-4e9b-966e-c072f8faae09"
-					(reference "D39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 204.47 106.68 90)
 		(unit 1)
@@ -13988,7 +14006,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1c7ef4a-4f35-4460-b995-904e98b8ecfd")
 		(property "Reference" "R76"
-			(at 44.6786 45.7778 0)
+			(at 45.72 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13996,8 +14014,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 44.6786 48.2021 0)
+		(property "Value" "4.7k"
+			(at 45.72 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14032,7 +14050,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C23162"
 			(at 43.18 46.99 0)
 			(effects
 				(font
@@ -14963,7 +14981,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 58.42 53.34 0)
+		(at 30.48 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14972,7 +14990,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4dc9186-1b69-4b12-a614-3741cf491cd9")
 		(property "Reference" "#PWR0168"
-			(at 58.42 59.69 0)
+			(at 30.48 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14981,7 +14999,7 @@
 			)
 		)
 		(property "Value" "GND_IND"
-			(at 58.42 58.42 0)
+			(at 30.48 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14989,7 +15007,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 53.34 0)
+			(at 30.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14998,7 +15016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 53.34 0)
+			(at 30.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15007,7 +15025,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 58.42 53.34 0)
+			(at 30.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15113,7 +15131,7 @@
 		(fields_autoplaced yes)
 		(uuid "dbc1f4cc-1c52-464b-b37b-3a42245e6c37")
 		(property "Reference" "R88"
-			(at 197.0786 44.5078 0)
+			(at 198.12 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15121,8 +15139,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 197.0786 46.9321 0)
+		(property "Value" "4.7k"
+			(at 198.12 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15157,7 +15175,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C23162"
 			(at 195.58 45.72 0)
 			(effects
 				(font
@@ -15476,7 +15494,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6b96f41-c985-48ce-84fc-da28fa018140")
 		(property "Reference" "R90"
-			(at 213.5886 44.5078 0)
+			(at 214.63 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15484,8 +15502,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 213.5886 46.9321 0)
+		(property "Value" "4.7k"
+			(at 214.63 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15520,7 +15538,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C23162"
 			(at 212.09 45.72 0)
 			(effects
 				(font
@@ -15680,7 +15698,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 74.93 36.83 90)
+		(at 83.82 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15688,7 +15706,7 @@
 		(dnp no)
 		(uuid "f11d499d-1b92-4fab-8a62-9b28fd0e55c7")
 		(property "Reference" "D13"
-			(at 78.74 37.1474 90)
+			(at 87.63 37.1474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15697,7 +15715,7 @@
 			)
 		)
 		(property "Value" "LED_5V_FUSED"
-			(at 78.74 39.6874 90)
+			(at 87.63 39.6874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15706,7 +15724,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15715,7 +15733,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15724,7 +15742,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15733,7 +15751,7 @@
 			)
 		)
 		(property "LCSC" "C34499"
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15742,7 +15760,7 @@
 			)
 		)
 		(property "color" "white"
-			(at 75.946 32.258 0)
+			(at 84.836 32.258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15750,7 +15768,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15759,7 +15777,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15768,7 +15786,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15777,7 +15795,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15786,7 +15804,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15795,7 +15813,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15804,7 +15822,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15813,7 +15831,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15822,7 +15840,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15831,7 +15849,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15840,7 +15858,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15849,7 +15867,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15858,7 +15876,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15867,7 +15885,7 @@
 			)
 		)
 		(property "Rating" ""
-			(at 74.93 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)

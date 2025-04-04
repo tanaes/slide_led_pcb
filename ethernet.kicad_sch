@@ -3598,6 +3598,26 @@
 		)
 		(uuid "caa2adb6-c2e3-4bf0-bb87-40c889cc0651")
 	)
+	(text_box "Schematic derived from https://github.com/c-/ESP32-Ethgate under a Creative Commons Zero v1.0 Universal license"
+		(exclude_from_sim no)
+		(at 92.71 21.59 0)
+		(size 82.55 8.89)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c4a9074a-0bff-4b56-9439-aa17ff4ea270")
+	)
 	(junction
 		(at 138.43 53.34)
 		(diameter 0)
