@@ -5855,7 +5855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "easyeda2kicad:CONN-TH_2P-MX250-3.5-02P-B-GY01-CU-A"
 			(at 261.62 48.26 0)
 			(effects
 				(font
@@ -5880,6 +5880,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C7470116"
+			(at 261.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -7444,7 +7452,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "easyeda2kicad:CONN-TH_2P-MX250-3.5-02P-B-GY01-CU-A"
 			(at 261.62 33.02 0)
 			(effects
 				(font
@@ -7469,6 +7477,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C7470116"
+			(at 261.62 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -8352,7 +8368,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:CONN-TH_P5.00_KF243-5.0-2P"
+		(property "Footprint" "easyeda2kicad:CONN-TH_2P-MX250-3.5-02P-B-GY01-CU-A"
 			(at 212.09 41.91 0)
 			(effects
 				(font
@@ -8379,7 +8395,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C475222"
+		(property "LCSC" "C7470116"
 			(at 212.09 41.91 0)
 			(effects
 				(font
