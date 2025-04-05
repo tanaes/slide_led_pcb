@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 2.45,
-          "width": 1.9
+          "height": 0.5,
+          "width": 0.63
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,11 +60,11 @@
       ],
       "drc_exclusions": [
         [
-          "courtyards_overlap|210325000|50875000|1dfdb933-d4ba-4b65-b570-c3ede442539f|28039999-3eae-4308-b711-7c2d1005cf5e",
+          "courtyards_overlap|210275000|54325000|1dfdb933-d4ba-4b65-b570-c3ede442539f|28039999-3eae-4308-b711-7c2d1005cf5e",
           ""
         ],
         [
-          "courtyards_overlap|211020260|48755000|28039999-3eae-4308-b711-7c2d1005cf5e|48fc66fa-cfa1-46e4-8559-e0a5d7b6bfb1",
+          "courtyards_overlap|210555000|52205000|28039999-3eae-4308-b711-7c2d1005cf5e|48fc66fa-cfa1-46e4-8559-e0a5d7b6bfb1",
           ""
         ]
       ],
@@ -144,7 +144,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.6,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
