@@ -839,6 +839,10 @@
     [
       "03b7d9ca-31d2-4146-be6b-e60928c91e33",
       "Pixel Bus"
+    ],
+    [
+      "9113ac0b-8416-408f-9e34-8bc77b1fbaac",
+      "Power Diagram"
     ]
   ],
   "text_variables": {}
